@@ -1,5 +1,2 @@
-*.o
-*.d
-build
-.idea
-fractol.exe
+build/
+.idea/
