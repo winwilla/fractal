@@ -208,8 +208,8 @@ __kernel void fractals(
 	double			tmp;
 	double			abs_z;
 
-	i = get_global_id(0) / WIDTH;
-	j = get_global_id(0) % WIDTH;
+	i = get_global_id(0) / WIDTH_CL;
+	j = get_global_id(0) % WIDTH_CL;
 	
 	z.re = var.min.re + j * var.d.re;
 	z.im = var.max.im - i * var.d.im;
@@ -348,10 +348,10 @@ __kernel void fractals(
 	if (var.type == RADIOLARIA_CL)
 	{
 		if (fabs(z.re) >= 300 || fabs(z.im) >= 10000)
-			out[i* WIDTH + j] = (var.color == RAD_SP_CL) ? 0xFFD700 : col;
+			out[i* WIDTH_CL + j] = (var.color == RAD_SP_CL) ? 0xFFD700 : col;
 		else
-			out[i* WIDTH + j] = 0;
+			out[i* WIDTH_CL + j] = 0;
 	}
 	else
-		out[i* WIDTH + j] = col;
+		out[i* WIDTH_CL + j] = col;
 }

@@ -1,20 +1,8 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fractol_cl.h                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: hdean <hdean@student.42.fr>                +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/10 17:20:39 by hdean             #+#    #+#             */
-/*   Updated: 2020/03/15 22:01:08 by hdean            ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef FRACTOL_CL_H
 # define FRACTOL_CL_H
 
-# define WIDTH 1000
-# define HEIGHT 1000
+# define WIDTH_CL 1000
+# define HEIGHT_CL 1000
 
 # define JULIA_CL 1
 # define MANDELBROT_CL 2
